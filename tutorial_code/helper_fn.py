@@ -56,6 +56,11 @@ Returns uint16 version
     return np.array(np.rint( (matrix-m_min)/float(m_max-m_min) * 65535.0),dtype=np.uint16)
 
 
+def get_filename(file_list, case):
+    for f in file_list:
+        if case in f:
+            return (f)
+
 ### LUNA LUNG SEGMENTATION
 
 
